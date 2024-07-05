@@ -201,6 +201,10 @@
         const appPlatform = window.navigator.platform
         if(appPlatform === 'Win32'){
           alert('Download is only available for IOS')
+        }else{
+          var userAgent = navigator.userAgent.toLowerCase(); 
+          var Android = userAgent.indexOf("android") > -1;
+          alert('Oops Andriod OS dectected, download failed')
         }
       })
     })
