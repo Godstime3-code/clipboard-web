@@ -201,6 +201,11 @@
         const appPlatform = window.navigator.platform
         if(appPlatform === 'Win32'){
           alert('Download is only available for IOS')
+        }else if(/iPad|iPhone|iPod/.test(navigator.userAgent)){
+          alert('Recommened OS dectected')
+          setTimeout(() => {
+            alert('You are running on an IOS system')
+          }, 2000);
         }else{
           var userAgent = navigator.userAgent.toLowerCase(); 
           var Android = userAgent.indexOf("android") > -1;
