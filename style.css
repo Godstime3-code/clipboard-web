@@ -1,7 +1,4 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(/images/Outfit-VariableFont_wght.ttf);
-  }
+
 
 *{
     margin: 0;
@@ -13,7 +10,7 @@ body{
     font-size: 18px;
     line-height: 30px;
     font-family: myFirstFont;
-    background-image: url('/images/bg-header-desktop.png');
+    background-image: url('bg-header-desktop.png');
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
